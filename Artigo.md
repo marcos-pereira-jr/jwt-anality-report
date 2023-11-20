@@ -1,5 +1,11 @@
 #artigo
-##### Características a serem analisadas 
+
+
+JWT é um padrão definida pela [[RFC-7519 - JSON Web Token (JWT)]] que especifica o formato e estrutura do token JWT, além disso ele especifica que o [[RFC-7515 - JSON Web Signature (JWS)]]  é responsável pela **integridade** e o [[RFC - 7516 - JSON Web Encryption (JWE)]] é responsável pela **privacidade**, todas essas especificações e algumas outras estão compiladas no [[Javascript Object Signing and Encryption (jose)]]
+
+
+
+Características a serem analisadas 
 
 |    |                          |                                                                                                                     |
 |----|--------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -21,7 +27,8 @@
 |    | Javascript | [[jose]]               | 6.508.721                    |  4.104             | 
 |    | Javascript | [[jwt-decode]]         | 5.564.026                    |  2.963             |
 |    | Python     | [[python-jose]]        | 1.617.849                    |  1.391                 |
-|    | Python     | [[flask-jwt-extended]] | 928.715                      |  1.461              |
+|    | Python     | ~~[[flask-jwt-extended]]~~ | 928.715                      |  1.461              |
+|    | Python     | [[jwcrypto]] | ?                      |  ?              |
 
 
 #### Capacidades
@@ -34,3 +41,7 @@
 |    | [[jwt-decode]]         |||
 |    | [[python-jose]]        |v|v|v|
 |    | [[flask-jwt-extended]] |v|v|v| 
+
+
+### links 
+- https://www.youtube.com/watch?v=bpB0pEro9qY

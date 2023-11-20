@@ -3,6 +3,7 @@ link: https://www.rfc-editor.org/rfc/rfc7518
 ---
 #RFC
 
+!!!ERRADO!! https://www.youtube.com/watch?v=bpB0pEro9qY
 Define qual são os algoritmos mínimos que devem ser cobertos pelas libs:
 
 
