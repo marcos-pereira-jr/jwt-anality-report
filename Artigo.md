@@ -25,10 +25,11 @@ Características a serem analisadas
 |    | Python     | [[pyjwt]]          | 29.403.798                       |  4.749             |
 |    | Javascript | [[jsonwebtoken]]       | 14.411.984                   | 17.083             | 
 |    | Javascript | [[jose]]               | 6.508.721                    |  4.104             | 
-|    | Javascript | [[jwt-decode]]         | 5.564.026                    |  2.963             |
+|    | Javascript |~~[[jwt-decode]]~~      | 5.564.026                    |  2.963             |
 |    | Python     | [[python-jose]]        | 1.617.849                    |  1.391                 |
 |    | Python     | ~~[[flask-jwt-extended]]~~ | 928.715                      |  1.461              |
 |    | Python     | [[jwcrypto]] | ?                      |  ?              |
+|    | Javascript | [[node-jose]] | ?                      |  ?              |
 
 
 #### Capacidades
