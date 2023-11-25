@@ -8,7 +8,7 @@ Dependencias:
 	- [[node-jws]]
 
 
-[[Teste RSA SHA-256 Parse And Verify]]
+[[Teste RSA SHA-256]]
 ```js
 describe('verify', function() {
   const pub = fs.readFileSync(path.join(__dirname, 'pub.pem'));

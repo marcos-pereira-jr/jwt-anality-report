@@ -7,7 +7,7 @@ doc: https://jwcrypto.readthedocs.io/en/latest/
 Dependências: 
 	- [[cryptography]]
 
-[[Teste HMAC SHA-256 - Parse And Verify]]
+[[Teste HMAC SHA-256]]
 ```python
 A1_signature = \
     [116, 24, 223, 180, 151, 153, 224, 37, 79, 250, 96, 125, 216, 173,
@@ -42,7 +42,7 @@ class TestJWS(unittest.TestCase):
 
 
 
-[[Teste RSA SHA-256 Parse And Verify]]
+[[Teste RSA SHA-256]]
 
 ```python
 # RFC 7515 - A.2

@@ -8,7 +8,7 @@ Foi baseada no pyjwt
 Dependências:
 	- [[pyrsa]]
 
-[[Teste RSA SHA-256 Parse And Verify]]
+[[Teste RSA SHA-256]]
 ```python
 def test_to_dict(self):  
     passphrase = "The quick brown fox jumps over the lazy dog"  

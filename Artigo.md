@@ -32,17 +32,20 @@ Características a serem analisadas
 |    | Javascript | [[node-jose]] | ?                      |  ?              |
 
 
-#### Capacidades
+#### Testes
 
-| ** | Lib                    | HS256 | RS256 | ES256 |
-|----|------------------------|-------|-------|---------------|
-|    | [[pyjwt]]              |v|v|v|
-|    | [[jsonwebtoken]]       |||
-|    | [[jose]]               |||
-|    | [[jwt-decode]]         |||
-|    | [[python-jose]]        |v|v|v|
-|    | [[flask-jwt-extended]] |v|v|v| 
+| ** | Lib                    | HS256 | RS256 | 
+|----|------------------------|-------|-------|
+|    | [[pyjwt]]              | v     | v     | 
+|    | [[jsonwebtoken]]       |       |       |
+|    | [[jose]]               |       |       |
+|    | [[jwt-decode]]         |       |       |
+|    | [[python-jose]]        | v     | v     |
+|    | [[node-jose]]          | v     | v     |
 
+
+
+```
 
 ### links 
 - https://www.youtube.com/watch?v=bpB0pEro9qY
