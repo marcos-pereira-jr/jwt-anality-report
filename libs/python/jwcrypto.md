@@ -7,6 +7,25 @@ doc: https://jwcrypto.readthedocs.io/en/latest/
 Dependências: 
 	- [[cryptography]]
 
+[[Teste ECDSA  SHA-256]]
+```python
+    def test_A6(self):
+        s = jws.JWS(A6_example['payload'])
+        s.add_signature(A6_example['key1'], None,
+                        A6_example['protected1'],
+                        A6_example['header1'])
+        s.add_signature(A6_example['key2'], None,
+                        A6_example['protected2'],
+                        A6_example['header2'])
+        s.verify(A6_example['key1'])
+        s.verify(A6_example['key2'])
+        sig = s.serialize()
+        s.deserialize(sig, A6_example['key1'])
+        s.deserialize(A6_serialized, A6_example['key2'])
+        self.assertEqual(A6_example['jose_header'], s.jose_header)
+``` 
+
+
 [[Teste HMAC SHA-256]]
 ```python
 A1_signature = \

@@ -34,18 +34,57 @@ Características a serem analisadas
 
 #### Testes
 
-| ** | Lib                    | HS256 | RS256 | 
-|----|------------------------|-------|-------|
-|    | [[pyjwt]]              | v     | v     | 
-|    | [[jsonwebtoken]]       |       |       |
-|    | [[jose]]               |       |       |
-|    | [[jwt-decode]]         |       |       |
-|    | [[python-jose]]        | v     | v     |
-|    | [[node-jose]]          | v     | v     |
+| ** | Lib              | HS256 | RS256 | ES256 |
+|----|------------------|-------|-------|-------|
+|    | [[pyjwt]]        | v     | v     | v     |
+|    | [[jsonwebtoken]] | v     | v     | v     |
+|    | [[jose]]         | v     | v     | f     |
+|    | [[jwcrypto]]     | v     | v     | v     |
+|    | [[python-jose]]  | v     | v     | v     |
+|    | [[node-jose]]    | v     | v     | v     |
 
 
+### Vulnerabilidades 
+| ** | Lib              | Moderada |  Gravidade Alta |
+|----|------------------|-------|-------|
+|    | [[pyjwt]]        | 0     | 1     | 
+|    | [[jsonwebtoken]] | 4     | 0     | 
+|    | [[jose]]         | 5     | 0     | 
+|    | [[jwcrypto]]     | 1     | 0     | 
+|    | [[python-jose]]  | 0     | 0     | 
+|    | [[node-jose]]    | 0     | 1     |
+
+### Contribuidores 
+| ** | Lib              | Quantidade |
+|----|------------------|-------|
+|    | [[pyjwt]]        | 100   | 
+|    | [[jsonwebtoken]] | 86    |
+|    | [[jose]]         | 31    | 
+|    | [[jwcrypto]]     | 32    |
+|    | [[python-jose]]  | 39    |
+|    | [[node-jose]]    | 32    |
+
+
+### Problemas levantados pela comunidade
+
+| **  | Lib              | Levantados | Resolvidos | Percentual resolvidos |
+| --- | ---------------- | ---------- | ---------- | --------------------- |
+|     | [[pyjwt]]        | 414        | 400        |                       |
+|     | [[jsonwebtoken]] | 619        | 511        |                       |
+|     | [[jose]]         | 128        | 128        |                       |
+|     | [[jwcrypto]]     | 141        | 134        |                       |
+|     | [[python-jose]]  | 145        | 77         |                       |
+|     | [[node-jose]]    | 173        | 120        |                       |
+<!-- TBLFM: @>=(@I / @3$4);%.2f -->
+
+
+
+```
+#### Filtros
+- ``tag:#lib  OR tag:#teste`` - Relação Lib x Test Alg  
 
 ```
 
 ### links 
 - https://www.youtube.com/watch?v=bpB0pEro9qY
+

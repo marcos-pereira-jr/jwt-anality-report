@@ -2,7 +2,8 @@
 github: https://github.com/cisco/node-jose
 linguagem: Javascript
 ---
-[[Teste RSA SHA-256]]
+[[Teste HMAC SHA-256]]
+[[Teste ECDSA  SHA-256]]
 [[Teste RSA SHA-256]]
 ```js
 
