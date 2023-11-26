@@ -54,40 +54,65 @@ Características a serem analisadas
 
 
 ### Vulnerabilidades 
-| ** | Lib              | Moderada |  Gravidade Alta |
-|----|------------------|-------|-------|
-|    | [[pyjwt]]        | 0     | 1     | 
-|    | [[jsonwebtoken]] | 4     | 0     | 
-|    | [[jose]]         | 5     | 0     | 
-|    | [[jwcrypto]]     | 1     | 0     | 
-|    | [[python-jose]]  | 0     | 0     | 
-|    | [[node-jose]]    | 0     | 1     |
+| **  | Lib              | Moderada | Gravidade Alta |
+| --- | ---------------- | -------- | -------------- |
+|     | [[jose]]         | 5        | 0              |
+|     | [[jsonwebtoken]] | 4        | 0              |
+|     | [[jwcrypto]]     | 1        | 0              |
+|     | [[node-jose]]    | 0        | 1              |
+|     | [[python-jose]]  | 0        | 0              |
+|     | [[pyjwt]]        | 0        | 1              |
 
 ### Contribuidores 
-| ** | Lib              | Quantidade |
-|----|------------------|-------|
-|    | [[pyjwt]]        | 100   | 
-|    | [[jsonwebtoken]] | 86    |
-|    | [[jose]]         | 31    | 
-|    | [[jwcrypto]]     | 32    |
-|    | [[python-jose]]  | 39    |
-|    | [[node-jose]]    | 32    |
+| **  | Lib              | Quantidade |
+| --- | ---------------- | ---------- |
+|     | [[pyjwt]]        | 100        |
+|     | [[jsonwebtoken]] | 86         |
+|     | [[python-jose]]  | 39         |
+|     | [[node-jose]]    | 32         |
+|     | [[jwcrypto]]     | 32         |
+|     | [[jose]]         | 31         |
 
 
 ### Problemas levantados pela comunidade
 
 | **  | Lib              | Levantados | Resolvidos | Percentual resolvidos |
 | --- | ---------------- | ---------- | ---------- | --------------------- |
-|     | [[pyjwt]]        | 414        | 400        |    96%                  |
-|     | [[jsonwebtoken]] | 619        | 511        |  82%                     |
-|     | [[jose]]         | 128        | 128        |  100%                     |
-|     | [[jwcrypto]]     | 141        | 134        |  95%                     |
-|     | [[python-jose]]  | 145        | 77         |  53%                      |
-|     | [[node-jose]]    | 173        | 120        |  69%                     |
+|     | [[jose]]         | 128        | 128        | 100%                  |
+|     | [[python-jose]]  | 145        | 77         | 53%                   |
+|     | [[node-jose]]    | 173        | 120        | 69%                   |
+|     | [[jsonwebtoken]] | 619        | 511        | 82%                   |
+|     | [[jwcrypto]]     | 141        | 134        | 95%                   |
+|     | [[pyjwt]]        | 414        | 400        | 96%                   |
 
 
 ### Commits no ultimo ano
 
+Dados de Semanais: 26/11/2023 - 19/11/2023 
+Dados mensais 26/11/2023 - 27/10/2023
+Dados anuais 26/11/2023 - 26/11/2023
+
+| **  | Lib              | Ultima Semana | Ultimo Mês | Ultimo ano |
+| --- | ---------------- | ------------- | ---------- | ---------- |
+|     | [[jose]]         | 2             | 17         | 246        |
+|     | [[pyjwt]]        | 0             | 1          | 49         |
+|     | [[jwcrypto]]     | 0             | 0          | 10         |
+|     | [[jsonwebtoken]] | 0             | 0          | 10         |
+|     | [[python-jose]]  | 0             | 0          | 7          |
+|     | [[node-jose]]    | 0             | 0          | 4          |
+
+
+
+#### Data de criação do Repositório 
+
+| **  | Lib              | Data da criação | Quantidade de commits |
+| --- | ---------------- | --------------- | --------------------- |
+|     | [[jwcrypto]]     | 04/03/2015      | 307                   |
+|     | [[jose]]         | 06/11/2018      | 1375                  |
+|     | [[node-jose]]    | 10/09/2015      | 275                   |
+|     | [[python-jose]]  | 20/04/2015      | 657                   |
+|     | [[pyjwt]]        | 24/02/2011      | 813                   |
+|     | [[jsonwebtoken]] | 30/07/2013      | 449                   |
 
 ```
 #### Filtros
