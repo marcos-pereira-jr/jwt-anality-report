@@ -31,6 +31,15 @@ Características a serem analisadas
 |    | Python     | [[jwcrypto]] | ?                      |  ?              |
 |    | Javascript | [[node-jose]] | ?                      |  ?              |
 
+### Cobertura
+| ** | Lib              | HS256 | RS256 | ES256 |
+|----|------------------|-------|-------|-------|
+|    | [[pyjwt]]        | v     | v     | v     |
+|    | [[jsonwebtoken]] | v     | v     | v     |
+|    | [[jose]]         | v     | v     | f     |
+|    | [[jwcrypto]]     | v     | v     | v     |
+|    | [[python-jose]]  | v     | v     | v     |
+|    | [[node-jose]]    | v     | v     | v     |
 
 #### Testes
 
@@ -69,14 +78,15 @@ Características a serem analisadas
 
 | **  | Lib              | Levantados | Resolvidos | Percentual resolvidos |
 | --- | ---------------- | ---------- | ---------- | --------------------- |
-|     | [[pyjwt]]        | 414        | 400        |                       |
-|     | [[jsonwebtoken]] | 619        | 511        |                       |
-|     | [[jose]]         | 128        | 128        |                       |
-|     | [[jwcrypto]]     | 141        | 134        |                       |
-|     | [[python-jose]]  | 145        | 77         |                       |
-|     | [[node-jose]]    | 173        | 120        |                       |
-<!-- TBLFM: @>=(@I / @3$4);%.2f -->
+|     | [[pyjwt]]        | 414        | 400        |    96%                  |
+|     | [[jsonwebtoken]] | 619        | 511        |  82%                     |
+|     | [[jose]]         | 128        | 128        |  100%                     |
+|     | [[jwcrypto]]     | 141        | 134        |  95%                     |
+|     | [[python-jose]]  | 145        | 77         |  53%                      |
+|     | [[node-jose]]    | 173        | 120        |  69%                     |
 
+
+### Commits no ultimo ano
 
 
 ```
