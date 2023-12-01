@@ -42,3 +42,23 @@ async function testRSAsig(t, alg) {
 }
 ```
 
+[[Teste ECDSA  SHA-256]]
+```javascript
+async function testECDSASigEncoding(t, alg) {
+  let { privateKey, publicKey } = await generateKeyPair(alg, { extractable: true })
+
+  const jws = await new FlattenedSign(t.context.payload)
+    .setProtectedHeader({ alg })
+    .sign(privateKey)
+
+  const derEncodedSignature = base64url.encode(
+    crypto.sign(`sha${alg.slice(2, 5)}`, Buffer.from('foo'), await exportPKCS8(privateKey)),
+  )
+
+  await t.throwsAsync(flattenedVerify({ ...jws, signature: derEncodedSignature }, publicKey), {
+    message: 'signature verification failed',
+    code: 'ERR_JWS_SIGNATURE_VERIFICATION_FAILED',
+  })
+}
+```
+

@@ -28,32 +28,43 @@ Características a serem analisadas
 |    | Javascript |~~[[jwt-decode]]~~      | 5.564.026                    |  2.963             |
 |    | Python     | [[python-jose]]        | 1.617.849                    |  1.391                 |
 |    | Python     | ~~[[flask-jwt-extended]]~~ | 928.715                      |  1.461              |
-|    | Python     | [[jwcrypto]] | ?                      |  ?              |
-|    | Javascript | [[node-jose]] | ?                      |  ?              |
+|    | Python     | [[jwcrypto]] | 309.800                      |  388              |
+|    | Javascript | [[node-jose]] | 296.150                      |  671              |
+
+dowloads
+jsonwebtoken - 9
+jose - 6
+node-jose - 3
+
+estrelas
+jsonwebtoken - 9
+jose - 6
+node-jose - 3
+
 
 ### Cobertura
 | ** | Lib              | HS256 | RS256 | ES256 |
 |----|------------------|-------|-------|-------|
 |    | [[pyjwt]]        | v     | v     | v     |
 |    | [[jsonwebtoken]] | v     | v     | v     |
-|    | [[jose]]         | v     | v     | f     |
+|    | [[jose]]         | v     | v     | v     |
 |    | [[jwcrypto]]     | v     | v     | v     |
 |    | [[python-jose]]  | v     | v     | v     |
 |    | [[node-jose]]    | v     | v     | v     |
 
-#### Testes
+#### Testes 
 
 | ** | Lib              | HS256 | RS256 | ES256 |
 |----|------------------|-------|-------|-------|
 |    | [[pyjwt]]        | v     | v     | v     |
 |    | [[jsonwebtoken]] | v     | v     | v     |
-|    | [[jose]]         | v     | v     | f     |
+|    | [[jose]]         | v     | v     | v     |
 |    | [[jwcrypto]]     | v     | v     | v     |
 |    | [[python-jose]]  | v     | v     | v     |
 |    | [[node-jose]]    | v     | v     | v     |
 
 
-### Vulnerabilidades 
+### Vulnerabilidades  Resolvidas 
 | **  | Lib              | Moderada | Gravidade Alta |
 | --- | ---------------- | -------- | -------------- |
 |     | [[jose]]         | 5        | 0              |
@@ -63,7 +74,8 @@ Características a serem analisadas
 |     | [[python-jose]]  | 0        | 0              |
 |     | [[pyjwt]]        | 0        | 1              |
 
-### Contribuidores 
+
+### Contribuidores  
 | **  | Lib              | Quantidade |
 | --- | ---------------- | ---------- |
 |     | [[pyjwt]]        | 100        |
@@ -74,7 +86,7 @@ Características a serem analisadas
 |     | [[jose]]         | 31         |
 
 
-### Problemas levantados pela comunidade
+### Problemas levantados pela comunidade 
 
 | **  | Lib              | Levantados | Resolvidos | Percentual resolvidos |
 | --- | ---------------- | ---------- | ---------- | --------------------- |
@@ -86,7 +98,7 @@ Características a serem analisadas
 |     | [[pyjwt]]        | 414        | 400        | 96%                   |
 
 
-### Commits no ultimo ano
+### Commits no ultimo ano 
 
 Dados de Semanais: 26/11/2023 - 19/11/2023 
 Dados mensais 26/11/2023 - 27/10/2023
@@ -105,20 +117,66 @@ Dados anuais 26/11/2023 - 26/11/2023
 
 #### Data de criação do Repositório 
 
-| **  | Lib              | Data da criação | Quantidade de commits |
-| --- | ---------------- | --------------- | --------------------- |
-|     | [[jwcrypto]]     | 04/03/2015      | 307                   |
-|     | [[jose]]         | 06/11/2018      | 1375                  |
-|     | [[node-jose]]    | 10/09/2015      | 275                   |
-|     | [[python-jose]]  | 20/04/2015      | 657                   |
-|     | [[pyjwt]]        | 24/02/2011      | 813                   |
-|     | [[jsonwebtoken]] | 30/07/2013      | 449                   |
+| **  | Lib              | Data da criação |
+| --- | ---------------- | --------------- |
+|     | [[jwcrypto]]     | 04/03/2015      |
+|     | [[jose]]         | 06/11/2018      |
+|     | [[node-jose]]    | 10/09/2015      |
+|     | [[python-jose]]  | 20/04/2015      |
+|     | [[pyjwt]]        | 24/02/2011      |
+|     | [[jsonwebtoken]] | 30/07/2013      |
 
+#### Commits totais
+
+| **  | Lib              | Quantidade de commits |
+| --- | ---------------- | --------------------- |
+|     | [[jwcrypto]]     | 307                   |
+|     | [[jose]]         | 1375                  |
+|     | [[node-jose]]    | 275                   |
+|     | [[python-jose]]  | 657                   |
+|     | [[pyjwt]]        | 813                   |
+|     | [[jsonwebtoken]] | 449                   |
 ```
 #### Filtros
 - ``tag:#lib  OR tag:#teste`` - Relação Lib x Test Alg  
 
 ```
+
+
+### Pesos atribuídos 
+| **    | Propriedade                                                 | Peso | Ponto máximo obtido |
+|-------|-------------------------------------------------------------|------|---------------------|
+| A1    | Algoritmos geradores de assinatura cobertos                 | 5    | 15                  |
+| A2    | Cobertura de Testes para Algoritmos geradores de assinatura | 5    | 15                  |
+| B3    | Download Semanais                                           | 3    | 9                   |
+| B4    | Quantidade de Contribuidores                                | 3    | 9                   |
+| B5    | Estrelas no Github                                          | 3    | 9                   |
+| B6    | Idade do projeto                                            | 3    | 9                   |
+| C7    | Vulnerabilidades resolvidas                                 | 2    | 6                   |
+| C8    | Problemas Levantados e resolvidos pela comunidade           | 2    | 6                   |
+| D8    | Commits no ultimo anos                                      | 1    | 3                   |
+| D9    | Quantidade de commits totais                                | 1    | 3                   |
+| TOTAL |                                                             |      | 84                  |
+
+
+
+### Javascript
+
+|              |     |     |     |     |     |     |     |     |     |     |     |
+| ------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|              | B3  | B4  | A1  | A2  | C7  | B4  | C8  | D8  | B6  | D9  | TOTAL    |
+| jsonwebtoken | 9   | 9   | 15  | 15  | 4   | 9   | 6   | 2   | 9   | 2   | 80    |
+| jose         | 6   | 6   | 15  | 15  | 6   | 3   | 4   | 3   | 3   | 3   | 64    |
+| node-jose    | 3   | 3   | 15  | 15  | 2   | 6   | 2   | 1   | 6   | 1   | 54    |
+
+
+### Python
+|             |    |    |    |    |    |    |    |    |    |    |    |
+|-------------|----|----|----|----|----|----|----|----|----|----|----|
+|             | B3 | B4 | A1 | A2 | C7 | B4 | C8 | D8 | B6 | D9 | TOTAL   |
+| pyjwt       | 9  | 9  | 15 | 15 | 6  | 9  | 6  | 3  | 9  | 2  | 83 |
+| python-jose | 6  | 6  | 15 | 15 | 2  | 6  | 2  | 1  | 3  | 3  | 59 |
+| jwcrypto    | 3  | 3  | 15 | 15 | 4  | 3  | 4  | 2  | 6  | 1  | 56 |
 
 ### links 
 - https://www.youtube.com/watch?v=bpB0pEro9qY
