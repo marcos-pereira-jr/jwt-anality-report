@@ -1,10 +1,8 @@
 #artigo
 
+A análise das bibliotecas JWT baseia-se nos padrões estabelecidos pelo grupo de padrões Javascript Object Signing and Encryption (jose), que define as diretrizes para o uso do JWT na internet. Dentro desses padrões, a RFC-7519 - JSON Web Token (JWT) especifica o formato do token, enquanto a RFC-7515 - JSON Web Signature (JWS) define a assinatura do token, garantindo a integridade da operação. Assim, os métodos para a geração de assinaturas tornam-se o ponto central da autenticação via JWT.
 
-O grupo de padrões [[Javascript Object Signing and Encryption (jose)]]  estabelece os padrões da internet para o uso do JWT, dentre os padrões o  
-[[RFC-7519 - JSON Web Token (JWT)]]  especifica o formato do Token, a [[RFC-7515 - JSON Web Signature (JWS)]]  define a assinatura do token garantindo a **integridade** da operação.
-Nesse sentido, os metódos para geração de assinatura se torna o cerne da autenticação via JWT.
-A RFC-7519 cobre os algoritimos para geração de token, são eles:
+A RFC-7519 abrange os algoritmos para a geração de tokens, incluindo:
 
 | alg Param | Digital Signature or MAC      | Implementation |
 |-----------|-------------------------------|----------------|
@@ -20,7 +18,7 @@ A RFC-7519 cobre os algoritimos para geração de token, são eles:
 | PS256     | RSASSA-PSS using SHA-256 and   MGF1 with SHA-256 | Optional       |
 | PS384     | RSASSA-PSS using SHA-384 and  MGF1 with SHA-384 | Optional       |
 | PS512     | RSASSA-PSS using SHA-512 and   MGF1 with SHA-512 | Optional       |
-:| none      | No digital signature or MAC  performed | Optional       |
+| none      | No digital signature or MAC  performed | Optional       
 
 Nesse trabalho iremos analisar se a biblioteca implementa o algoritimo obrigatório HS256 e também os 2 algoritmos recomentados RS256 
 e EC256
@@ -43,20 +41,12 @@ Para analisarmos as bibliotecas JWT  usamos os criterios abaixo:
 | D9    | Quantidade de commits totais                                | 1    | 3                   |
 | TOTAL |                                                             |      | 84                  |
 
-A metodologia usada para analisar a lib foi dividir em 4 categoria de atributos de cada biblioteca, cada categoria recebeu um peso, de acordo 
-com seu impacto no usuário da lib,podendo variar entre a categoria A cujo peso é 5 e a categoria D cujo peso é 1. A lib que mais se destaca recebe 3 pontos multiplicado pelo peso da categoria do atributo
-podendo assim alcançar o ponto maxímo de 15 pontos ou 3 em uma catégoria. 
-A categoria A diz respeito a quais das criptografias obrigatórias e recomendadas ela implementa e se tem testes para cada
-uma dessas implementações e recebeu peso 5. A categoria B diz respeito ao impacto na comunidade e é a categoria com mais numero de atributos, são elas
-Numero de dowloads semanais, estrelas no github, idade do projeto e quantidades de contribuidores, recebeu peso 3.
-Na categoria D com peso 2, foi analisado fatores que podem trazer impressões errados sobre cada bibliotecas mas que são relevantes, 
-no caso seria problemas resolvidos levantados pela comunidades e Vulnerabilidades resolvidas, já que biblioteca mais novas podem ter 
-um percentual de problemas resolvidos maior, porém podem conter Vulnerabilidades que já foram resolvidas e levantadas em bibliotecas mais antigas.
-Na ultima categoria D, recebeu 1 ponto, foi avaliados fatores gerais do projetos, os commits totais e os commits no ultimo ano
-esses fatores podem apontar para uma biblioteca mais ativa porém não são totalmente confiaveís para medir se biblioteca esta ativa pois 
-commits podem conter muita implementações novas ou pequenos commits.
 
-
+A abordagem adotada para a análise das bibliotecas que implementam o JWT nas linguagens Python e JavaScript foi estruturada em quatro categorias distintas, cada uma atribuída a um conjunto específico de atributos. Cada categoria recebeu um peso correspondente, baseado em seu impacto perceptível pelos usuários da biblioteca, variando de A, com um peso de 5, a D, com um peso de 1. A pontuação máxima que uma biblioteca poderia alcançar em cada categoria seria de 15 pontos ou 3 pontos por atributo.
+A Categoria A focaliza a implementação das criptografias obrigatórias e recomendadas pela biblioteca, bem como a presença de testes associados a cada uma dessas implementações, sendo atribuído um peso de 5. Por outro lado, a Categoria B, com peso 3, aborda o impacto na comunidade, considerando parâmetros como o número de downloads semanais, estrelas no GitHub, idade do projeto e quantidade de contribuidores.
+A Categoria C, com peso 2, direciona-se a fatores que podem gerar impressões equivocadas sobre as bibliotecas, como problemas resolvidos levantados pela comunidade e vulnerabilidades resolvidas. Esta categoria busca fornecer uma visão abrangente, reconhecendo que bibliotecas mais recentes podem resolver um maior percentual de problemas, embora possam também conter vulnerabilidades já solucionadas em bibliotecas mais estabelecidas.
+Na última Categoria D, atribuída com um peso de 1 ponto, são considerados fatores gerais do projeto, como o número total de commits e os commits realizados no último ano. Estes elementos, embora possam indicar uma biblioteca mais ativa, são interpretados com cautela, pois os commits podem variar significativamente em termos de complexidade e extensão.
+A combinação ponderada dessas categorias visa proporcionar uma avaliação abrangente e equilibrada das bibliotecas, oferecendo uma percepções valiosa sobre a sua adequação e confiabilidade.
 
 
 Características a serem analisadas 
@@ -215,6 +205,9 @@ Dados anuais 26/11/2023 - 26/11/2023
 | python-jose | 6  | 6  | 15 | 15 | 2  | 6  | 2  | 1  | 3  | 3  | 59 |
 | jwcrypto    | 3  | 3  | 15 | 15 | 4  | 3  | 4  | 2  | 6  | 1  | 56 |
 
+
+Aqui vemos uma diferença ainda gritante entre o primeiro colocado de todas as categorias e os demais, a pyjwt perde somente para commits anuais, isso pode ser devido ao fato 
+da lib ser a biblioteca mais antiga analisada e não precisar de grandes ajustes com o passar do tempo. Nesse sentido, a biblioteca pyjwt é a bilbioteca para assinatura de token JWT em python mais estável para se adotar em um projeto
 ### links 
 - https://www.youtube.com/watch?v=bpB0pEro9qY
 
